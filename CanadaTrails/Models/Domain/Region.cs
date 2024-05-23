@@ -1,4 +1,4 @@
-﻿namespace NZWalks.API.Models.Doamin
+﻿namespace CanadaTrails.Models.Domain
 {
     public class Region
     {

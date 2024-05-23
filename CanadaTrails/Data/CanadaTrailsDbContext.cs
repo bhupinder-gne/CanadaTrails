@@ -1,8 +1,7 @@
 ﻿using CanadaTrails.Models.Domain;
 using Microsoft.EntityFrameworkCore;
-using NZWalks.API.Models.Doamin;
 
-namespace NZWalks.API.Data
+namespace CanadaTrails.API.Data
 {
     public class CanadaTrailsDbContext : DbContext
     {

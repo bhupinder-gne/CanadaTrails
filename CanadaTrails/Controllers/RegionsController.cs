@@ -10,12 +10,10 @@ namespace CanadaTrails.Controllers
     [ApiController]
     public class RegionsController : ControllerBase
     {
-        private CanadaTrailsDbContext _context;
         private readonly IRegionRepository regionRepository;
 
         public RegionsController(CanadaTrailsDbContext context, IRegionRepository regionRepository)
         {
-            this._context = context;
             this.regionRepository = regionRepository;
         }
 
@@ -42,7 +40,7 @@ namespace CanadaTrails.Controllers
         [HttpGet("{id:Guid}")]
         public async Task<IActionResult> GetRegionById(Guid id)
         {
-            var region = await _context.Regions.FindAsync(id);
+            var region = await regionRepository.GetRegionAsync(id);
             if (region == null)
                 return NotFound();
 
@@ -73,8 +71,7 @@ namespace CanadaTrails.Controllers
                 RegionImageUrl = regionDto.RegionImageUrl
             };
 
-            await _context.Regions.AddAsync(region);
-            await _context.SaveChangesAsync();
+           await regionRepository.CreateRegionAsync(region);
 
             return CreatedAtAction(nameof(GetRegionById), new { id = region.Id }, region);
         }
@@ -84,15 +81,9 @@ namespace CanadaTrails.Controllers
         [HttpPut("{id:Guid}")]
         public async Task<IActionResult> UpdateRegion(Guid id, [FromBody] UpsertRegionDto regionDto)
         {
-            var region = await _context.Regions.FindAsync(id);
+            var region = await regionRepository.GetRegionAsync(id);
             if (region == null)
                 return NotFound();
-
-            region.Code = regionDto.Code;
-            region.Name = regionDto.Name;
-            region.RegionImageUrl = regionDto.RegionImageUrl;
-
-            await _context.SaveChangesAsync();
 
             return NoContent();
         }
@@ -102,12 +93,9 @@ namespace CanadaTrails.Controllers
         [HttpDelete("{id:Guid}")]
         public async  Task<IActionResult> DeleteRegion([FromRoute] Guid id)
         {
-            var region = await _context.Regions.FindAsync(id);
+            var region = await regionRepository.GetRegionAsync(id);
             if (region == null)
                 return NotFound();
-
-            _context.Regions.Remove(region);
-            await _context.SaveChangesAsync();
 
             return NoContent();
         }

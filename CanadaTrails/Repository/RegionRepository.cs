@@ -11,24 +11,41 @@ namespace CanadaTrails.Repository
             _context = context;
         }
 
-        public Task<Region> CreateRegionAsync(Region region)
+        public async Task<Region> CreateRegionAsync(Region region)
         {
-            throw new NotImplementedException();
+            await _context.Regions.AddAsync(region);
+            await _context.SaveChangesAsync();
+            return region;
         }
 
-        public Task<Region> DeleteRegionAsync(Guid regionId)
+        public async Task<Region?> DeleteRegionAsync(Guid regionId)
         {
-            throw new NotImplementedException();
+            var existingRegion = await _context.Regions.FirstOrDefaultAsync(r => r.Id == regionId);
+            if (existingRegion == null)
+                return null;
+
+            _context.Regions.Remove(existingRegion);
+            await _context.SaveChangesAsync();
+            return existingRegion;
         }
 
-        public Task<Region> GetRegionAsync(Guid regionId)
+        public async Task<Region?> GetRegionAsync(Guid regionId)
         {
-            throw new NotImplementedException();
+            return await _context.Regions.FindAsync(regionId);
         }
 
-        public Task<Region> UpdateRegionAsync(Guid regionId, Region region)
+        public async Task<Region?> UpdateRegionAsync(Guid regionId, Region region)
         {
-            throw new NotImplementedException();
+            var existingRegion = await _context.Regions.FirstOrDefaultAsync(r => r.Id == regionId);
+            if(existingRegion == null)
+                return null;
+
+            existingRegion.Code = region.Code;
+            existingRegion.Name = region.Name;
+            existingRegion.RegionImageUrl = region.RegionImageUrl;
+
+            await _context.SaveChangesAsync();
+            return existingRegion;
         }
 
         public async Task<List<Region>> GetRegionsAsync()

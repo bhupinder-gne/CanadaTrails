@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<CanadaTrailsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CanadaTrailsConnectionString")));
 
-builder.Services.AddScoped<IRegionRepository, InMemoryRegionRepository>();
+builder.Services.AddScoped<IRegionRepository, RegionRepository>();
 
 var app = builder.Build();
 

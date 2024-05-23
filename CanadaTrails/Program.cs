@@ -1,4 +1,5 @@
 using CanadaTrails.API.Data;
+using CanadaTrails.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<CanadaTrailsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CanadaTrailsConnectionString")));
+
+builder.Services.AddScoped<IRegionRepository, InMemoryRegionRepository>();
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿namespace NZWalks.API.Models.DTO
+﻿namespace CanadaTrails.Models.DTO
 {
     public class RegionDto
     {

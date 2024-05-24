@@ -1,4 +1,5 @@
 using CanadaTrails.API.Data;
+using CanadaTrails.Mappings;
 using CanadaTrails.Repository;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,8 @@ builder.Services.AddDbContext<CanadaTrailsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CanadaTrailsConnectionString")));
 
 builder.Services.AddScoped<IRegionRepository, RegionRepository>();
-
+builder.Services.AddScoped<IWalkRepository, WalkRepository>();
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

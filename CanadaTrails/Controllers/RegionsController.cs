@@ -3,6 +3,7 @@ using CanadaTrails.Models.DTO;
 using CanadaTrails.API.Data;
 using CanadaTrails.Repository;
 using CanadaTrails.Models.Domain;
+using AutoMapper;
 
 namespace CanadaTrails.Controllers
 {
@@ -10,11 +11,15 @@ namespace CanadaTrails.Controllers
     [ApiController]
     public class RegionsController : ControllerBase
     {
+        private CanadaTrailsDbContext _context;
         private readonly IRegionRepository regionRepository;
+        private readonly IMapper mapper;
 
-        public RegionsController(CanadaTrailsDbContext context, IRegionRepository regionRepository)
+        public RegionsController(CanadaTrailsDbContext context, IRegionRepository regionRepository, IMapper mapper)
         {
+            this._context = context;
             this.regionRepository = regionRepository;
+            this.mapper = mapper;
         }
 
         //GET ALL REGIONS
@@ -23,16 +28,7 @@ namespace CanadaTrails.Controllers
         public async Task<IActionResult> GetAll()
         {
             var regions = await regionRepository.GetRegionsAsync();
-            //Map the regions to RegionDto
-            var regionsDto = regions.Select(region => new RegionDto
-            {
-                Id = region.Id,
-                Code = region.Code,
-                Name = region.Name,
-                RegionImageUrl = region.RegionImageUrl
-            }).ToList();
-
-            return Ok(regionsDto);
+            return Ok(mapper.Map<List<RegionDto>>(regions));
         }
 
         //GET REGION BY ID
@@ -44,15 +40,7 @@ namespace CanadaTrails.Controllers
             if (region == null)
                 return NotFound();
 
-            var regionDto = new RegionDto
-            {
-                Id = region.Id,
-                Code = region.Code,
-                Name = region.Name,
-                RegionImageUrl = region.RegionImageUrl
-            };
-
-            return Ok(regionDto);
+            return Ok(mapper.Map<RegionDto>(region));
         }
 
         //Create New Region
@@ -63,13 +51,7 @@ namespace CanadaTrails.Controllers
             if (regionDto == null)
                 return BadRequest();
 
-            var region = new Region
-            {
-                Id = Guid.NewGuid(),
-                Code = regionDto.Code,
-                Name = regionDto.Name,
-                RegionImageUrl = regionDto.RegionImageUrl
-            };
+            var region = mapper.Map<Region>(regionDto);
 
            await regionRepository.CreateRegionAsync(region);
 
@@ -81,11 +63,12 @@ namespace CanadaTrails.Controllers
         [HttpPut("{id:Guid}")]
         public async Task<IActionResult> UpdateRegion(Guid id, [FromBody] UpsertRegionDto regionDto)
         {
-            var region = await regionRepository.GetRegionAsync(id);
+            var updatedRegion = mapper.Map<Region>(regionDto);
+            var region = await regionRepository.UpdateRegionAsync(id, updatedRegion);
             if (region == null)
                 return NotFound();
 
-            return NoContent();
+            return Ok(region);
         }
 
         //Delete Region
@@ -93,7 +76,7 @@ namespace CanadaTrails.Controllers
         [HttpDelete("{id:Guid}")]
         public async  Task<IActionResult> DeleteRegion([FromRoute] Guid id)
         {
-            var region = await regionRepository.GetRegionAsync(id);
+            var region = await regionRepository.DeleteRegionAsync(id);
             if (region == null)
                 return NotFound();
 

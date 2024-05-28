@@ -4,6 +4,7 @@ using CanadaTrails.API.Data;
 using CanadaTrails.Repository;
 using CanadaTrails.Models.Domain;
 using AutoMapper;
+using CanadaTrails.CustomActionFilter;
 
 namespace CanadaTrails.Controllers
 {
@@ -23,6 +24,7 @@ namespace CanadaTrails.Controllers
         //Create Walk
         // POST: /api/walks
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> Create([FromBody] AddWalkRequestDto addWalkRequestDto)
         {
             //Map DTO to Domain Model
@@ -56,6 +58,7 @@ namespace CanadaTrails.Controllers
         //Update Walk
         //PUT api/walks/{id}
         [HttpPut("{id:Guid}")]
+        [ValidateModel]
         public async Task<IActionResult> UpdateWalk(Guid id, [FromBody] UpdateWalkRequestDto updateWalkRequestDto)
         {
             var walk = mapper.Map<Walk>(updateWalkRequestDto);

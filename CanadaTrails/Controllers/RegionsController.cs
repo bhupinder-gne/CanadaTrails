@@ -4,6 +4,7 @@ using CanadaTrails.API.Data;
 using CanadaTrails.Repository;
 using CanadaTrails.Models.Domain;
 using AutoMapper;
+using CanadaTrails.CustomActionFilter;
 
 namespace CanadaTrails.Controllers
 {
@@ -46,6 +47,7 @@ namespace CanadaTrails.Controllers
         //Create New Region
         //POST api/regions
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> CreateRegion([FromBody] UpsertRegionDto regionDto)
         {
             if (regionDto == null)
@@ -53,7 +55,7 @@ namespace CanadaTrails.Controllers
 
             var region = mapper.Map<Region>(regionDto);
 
-           await regionRepository.CreateRegionAsync(region);
+            await regionRepository.CreateRegionAsync(region);
 
             return CreatedAtAction(nameof(GetRegionById), new { id = region.Id }, region);
         }
@@ -61,6 +63,7 @@ namespace CanadaTrails.Controllers
         //Update Region
         //PUT api/regions/{id}
         [HttpPut("{id:Guid}")]
+        [ValidateModel]
         public async Task<IActionResult> UpdateRegion(Guid id, [FromBody] UpsertRegionDto regionDto)
         {
             var updatedRegion = mapper.Map<Region>(regionDto);

@@ -13,6 +13,7 @@ namespace CanadaTrails.Mappings
             CreateMap<Walk, AddWalkRequestDto>().ReverseMap();
             CreateMap<Walk, WalkDto>().ReverseMap();
             CreateMap<Walk, UpdateWalkRequestDto>().ReverseMap();
+            CreateMap<Difficulty, DifficultyDto>().ReverseMap();
         }
     }
 }

@@ -32,7 +32,7 @@ namespace CanadaTrails.Repository
 
         public async Task<Walk?> GetWalkAsync(Guid walkId)
         {
-            var walk = await context.Walks.FirstOrDefaultAsync(w => w.Id == walkId);
+            var walk = await context.Walks.Include("Difficulty").Include("Region").FirstOrDefaultAsync(w => w.Id == walkId);
             if(walk == null)
                 return null;
             return walk;
@@ -40,7 +40,7 @@ namespace CanadaTrails.Repository
 
         public async Task<List<Walk>> GetWalksAsync()
         {
-            return await context.Walks.ToListAsync();
+            return await context.Walks.Include("Difficulty").Include("Region").ToListAsync();
         }
 
         public async Task<Walk?> UpdateWalkAsync(Guid walkId, Walk walk)

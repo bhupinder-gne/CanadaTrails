@@ -35,11 +35,11 @@ namespace CanadaTrails.Controllers
         }
         
         //GET ALL WALKS
-        //GET api/walks
+        //GET api/walks?filterOn={filterOn}&filterQuery={filterQuery}
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn = null, [FromQuery] string? filterQuery = null)
         {
-            var walks = await walkRepository.GetWalksAsync();
+            var walks = await walkRepository.GetWalksAsync(filterOn, filterQuery);
             return Ok(mapper.Map<List<WalkDto>>(walks));
         }
 

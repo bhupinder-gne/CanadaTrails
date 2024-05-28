@@ -38,9 +38,15 @@ namespace CanadaTrails.Repository
             return walk;
         }
 
-        public async Task<List<Walk>> GetWalksAsync()
+        public async Task<List<Walk>> GetWalksAsync(string? filterOn = null, string? filterQuery = null)
         {
-            return await context.Walks.Include("Difficulty").Include("Region").ToListAsync();
+            var walks = context.Walks.Include("Difficulty").Include("Region").AsQueryable();
+
+            //Filtering
+            if (!string.IsNullOrEmpty(filterOn) && !string.IsNullOrEmpty(filterQuery) && (filterOn.Equals("Name", StringComparison.Ordinal) || filterOn.Equals("Description", StringComparison.Ordinal)))
+                walks = walks.Where(w => EF.Property<string>(w, filterOn).Contains(filterQuery));
+
+            return await walks.ToListAsync();
         }
 
         public async Task<Walk?> UpdateWalkAsync(Guid walkId, Walk walk)

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\repository\\walkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\repository\\walkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\controllers\\walkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\repository\\iwalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\repository\\iwalkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\repository\\walkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\repository\\walkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -127,26 +127,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "WalkRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\WalkRepository.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Repository\\WalkRepository.cs",
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\WalkRepository.cs",
               "RelativeToolTip": "CanadaTrails\\Repository\\WalkRepository.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAswC0AAACoAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAswDEAAAB/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T16:04:35.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IWalkRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\IWalkRepository.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Repository\\IWalkRepository.cs",
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\IWalkRepository.cs",
               "RelativeToolTip": "CanadaTrails\\Repository\\IWalkRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T16:03:53.256Z",
               "EditorCaption": ""
@@ -166,13 +166,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WalksController.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\WalksController.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Controllers\\WalksController.cs",
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\WalksController.cs",
               "RelativeToolTip": "CanadaTrails\\Controllers\\WalksController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACkAAAA3AAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T15:59:28.892Z",
               "EditorCaption": ""

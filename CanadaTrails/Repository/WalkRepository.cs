@@ -38,13 +38,19 @@ namespace CanadaTrails.Repository
             return walk;
         }
 
-        public async Task<List<Walk>> GetWalksAsync(string? filterOn = null, string? filterQuery = null)
+        public async Task<List<Walk>> GetWalksAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool? isAscending = true)
         {
             var walks = context.Walks.Include("Difficulty").Include("Region").AsQueryable();
 
             //Filtering
             if (!string.IsNullOrEmpty(filterOn) && !string.IsNullOrEmpty(filterQuery) && (filterOn.Equals("Name", StringComparison.Ordinal) || filterOn.Equals("Description", StringComparison.Ordinal)))
                 walks = walks.Where(w => EF.Property<string>(w, filterOn).Contains(filterQuery));
+
+            //Sorting
+            if (!string.IsNullOrEmpty(sortBy) && (sortBy.Equals("Name", StringComparison.Ordinal) || sortBy.Equals("Description", StringComparison.Ordinal)))
+            {
+                walks = isAscending.Value ? walks.OrderBy(w => EF.Property<string>(w, sortBy)) : walks.OrderByDescending(w => EF.Property<string>(w, sortBy));
+            }
 
             return await walks.ToListAsync();
         }

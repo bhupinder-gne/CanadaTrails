@@ -33,13 +33,13 @@ namespace CanadaTrails.Controllers
 
             return Ok(mapper.Map<WalkDto>(walkDomainModel));
         }
-        
+
         //GET ALL WALKS
-        //GET api/walks?filterOn={filterOn}&filterQuery={filterQuery}
+        //GET api/walks?filterOn={filterOn}&filterQuery={filterQuery}&sortOrder={sortOrder}&isAscending={isAscending}
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] string? filterOn = null, [FromQuery] string? filterQuery = null)
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn , [FromQuery] string? filterQuery , [FromQuery] string? sortBy, [FromQuery] bool? isAscending = true)
         {
-            var walks = await walkRepository.GetWalksAsync(filterOn, filterQuery);
+            var walks = await walkRepository.GetWalksAsync(filterOn, filterQuery, sortBy, isAscending);
             return Ok(mapper.Map<List<WalkDto>>(walks));
         }
 

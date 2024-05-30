@@ -82,7 +82,7 @@ namespace CanadaTrails.Controllers
         //Delete Region
         //DELETE api/regions/{id}
         [HttpDelete("{id:Guid}")]
-        [Authorize(Roles = "Writer")]
+        [Authorize(Roles = "Writer,Reader")]
         public async  Task<IActionResult> DeleteRegion([FromRoute] Guid id)
         {
             var region = await regionRepository.DeleteRegionAsync(id);

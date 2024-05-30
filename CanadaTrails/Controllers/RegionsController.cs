@@ -5,6 +5,7 @@ using CanadaTrails.Repository;
 using CanadaTrails.Models.Domain;
 using AutoMapper;
 using CanadaTrails.CustomActionFilter;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CanadaTrails.Controllers
 {
@@ -26,6 +27,7 @@ namespace CanadaTrails.Controllers
         //GET ALL REGIONS
         //GET api/regions
         [HttpGet]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
             var regions = await regionRepository.GetRegionsAsync();
@@ -35,6 +37,7 @@ namespace CanadaTrails.Controllers
         //GET REGION BY ID
         //GET api/regions/{id}
         [HttpGet("{id:Guid}")]
+        [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetRegionById(Guid id)
         {
             var region = await regionRepository.GetRegionAsync(id);
@@ -48,6 +51,7 @@ namespace CanadaTrails.Controllers
         //POST api/regions
         [HttpPost]
         [ValidateModel]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateRegion([FromBody] UpsertRegionDto regionDto)
         {
             if (regionDto == null)
@@ -64,6 +68,7 @@ namespace CanadaTrails.Controllers
         //PUT api/regions/{id}
         [HttpPut("{id:Guid}")]
         [ValidateModel]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> UpdateRegion(Guid id, [FromBody] UpsertRegionDto regionDto)
         {
             var updatedRegion = mapper.Map<Region>(regionDto);
@@ -77,6 +82,7 @@ namespace CanadaTrails.Controllers
         //Delete Region
         //DELETE api/regions/{id}
         [HttpDelete("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async  Task<IActionResult> DeleteRegion([FromRoute] Guid id)
         {
             var region = await regionRepository.DeleteRegionAsync(id);

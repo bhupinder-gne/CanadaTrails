@@ -35,11 +35,11 @@ namespace CanadaTrails.Controllers
         }
 
         //GET ALL WALKS
-        //GET api/walks?filterOn={filterOn}&filterQuery={filterQuery}&sortOrder={sortOrder}&isAscending={isAscending}
+        //GET api/walks?filterOn={filterOn}&filterQuery={filterQuery}&sortOrder={sortOrder}&isAscending={isAscending}&page={page}&pageSize={pageSize}
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] string? filterOn , [FromQuery] string? filterQuery , [FromQuery] string? sortBy, [FromQuery] bool? isAscending = true)
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn , [FromQuery] string? filterQuery , [FromQuery] string? sortBy, [FromQuery] bool? isAscending, [FromQuery] int? page =1, int? pageSize=10 )
         {
-            var walks = await walkRepository.GetWalksAsync(filterOn, filterQuery, sortBy, isAscending);
+            var walks = await walkRepository.GetWalksAsync(filterOn, filterQuery, sortBy, isAscending, page, pageSize);
             return Ok(mapper.Map<List<WalkDto>>(walks));
         }
 

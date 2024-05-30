@@ -38,7 +38,7 @@ namespace CanadaTrails.Repository
             return walk;
         }
 
-        public async Task<List<Walk>> GetWalksAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool? isAscending = true)
+        public async Task<List<Walk>> GetWalksAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool? isAscending = true, int? page = 1, int? pageSize = 10)
         {
             var walks = context.Walks.Include("Difficulty").Include("Region").AsQueryable();
 
@@ -51,6 +51,9 @@ namespace CanadaTrails.Repository
             {
                 walks = isAscending.Value ? walks.OrderBy(w => EF.Property<string>(w, sortBy)) : walks.OrderByDescending(w => EF.Property<string>(w, sortBy));
             }
+
+            //Pagination
+            walks = walks.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value);
 
             return await walks.ToListAsync();
         }

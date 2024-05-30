@@ -5,7 +5,7 @@ namespace CanadaTrails.API.Data
 {
     public class CanadaTrailsDbContext : DbContext
     {
-        public CanadaTrailsDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        public CanadaTrailsDbContext(DbContextOptions<CanadaTrailsDbContext> dbContextOptions) : base(dbContextOptions)
         {
         }
 

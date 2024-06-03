@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\repository\\iimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\data\\canadatrailsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\data\\canadatrailsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|solutionrelative:canadatrails\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E721BB8-48AB-4A31-8AB4-23D2E205A666}|CanadaTrails\\CanadaTrails.csproj|c:\\users\\bhupinds\\source\\repos\\canadatrails\\canadatrails\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -177,12 +177,8 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ImageRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\ImageRepository.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Repository\\ImageRepository.cs",
@@ -195,29 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IImageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\IImageRepository.cs",
-              "RelativeDocumentMoniker": "CanadaTrails\\Repository\\IImageRepository.cs",
-              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\IImageRepository.cs",
-              "RelativeToolTip": "CanadaTrails\\Repository\\IImageRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAVAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Program.cs",
+              "RelativeDocumentMoniker": "CanadaTrails\\Program.cs",
+              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Program.cs",
+              "RelativeToolTip": "CanadaTrails\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T17:18:09.786Z",
+              "WhenOpened": "2024-05-23T17:59:23.295Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImageUploadRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
-              "RelativeDocumentMoniker": "CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
-              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
-              "RelativeToolTip": "CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T17:12:55.192Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -234,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Image.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Models\\Domain\\Image.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Models\\Domain\\Image.cs",
@@ -247,20 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Program.cs",
-              "RelativeDocumentMoniker": "CanadaTrails\\Program.cs",
-              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Program.cs",
-              "RelativeToolTip": "CanadaTrails\\Program.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAAAG4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T17:59:23.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AddWalkRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Models\\DTO\\AddWalkRequestDto.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Models\\DTO\\AddWalkRequestDto.cs",
@@ -273,7 +247,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "CanadaTrails\\Controllers\\RegionsController.cs",
+              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "CanadaTrails\\Controllers\\RegionsController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T18:06:59.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImageUploadRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
+              "RelativeDocumentMoniker": "CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
+              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
+              "RelativeToolTip": "CanadaTrails\\Models\\DTO\\ImageUploadRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T17:12:55.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "IImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\IImageRepository.cs",
+              "RelativeDocumentMoniker": "CanadaTrails\\Repository\\IImageRepository.cs",
+              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\IImageRepository.cs",
+              "RelativeToolTip": "CanadaTrails\\Repository\\IImageRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T17:18:09.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RegionRepository.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\RegionRepository.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Repository\\RegionRepository.cs",
@@ -286,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "20240530170951_Adding images table.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Migrations\\20240530170951_Adding images table.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Migrations\\20240530170951_Adding images table.cs",
@@ -320,7 +333,8 @@
               "RelativeToolTip": "CanadaTrails\\Migrations\\CanadaTrailsAuthDb\\20240529180012_Auth DB.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T18:00:12.203Z"
+              "WhenOpened": "2024-05-29T18:00:12.203Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -330,7 +344,7 @@
               "RelativeDocumentMoniker": "CanadaTrails\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\AuthController.cs",
               "RelativeToolTip": "CanadaTrails\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEMAAAAvAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAIBJwEMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T16:38:12.077Z",
               "EditorCaption": ""
@@ -338,19 +352,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "RegionsController.cs",
-              "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\RegionsController.cs",
-              "RelativeDocumentMoniker": "CanadaTrails\\Controllers\\RegionsController.cs",
-              "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Controllers\\RegionsController.cs",
-              "RelativeToolTip": "CanadaTrails\\Controllers\\RegionsController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAowFUAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:06:59.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "CanadaTrailsDbContext.cs",
               "DocumentMoniker": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Data\\CanadaTrailsDbContext.cs",
               "RelativeDocumentMoniker": "CanadaTrails\\Data\\CanadaTrailsDbContext.cs",
@@ -384,7 +385,8 @@
               "RelativeToolTip": "CanadaTrails\\Repository\\ITokenRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T18:22:26.172Z"
+              "WhenOpened": "2024-05-29T18:22:26.172Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -394,9 +396,10 @@
               "RelativeDocumentMoniker": "CanadaTrails\\Repository\\TokenRepository.cs",
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Repository\\TokenRepository.cs",
               "RelativeToolTip": "CanadaTrails\\Repository\\TokenRepository.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAACgAAABBAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAABQwCgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T18:23:20.062Z"
+              "WhenOpened": "2024-05-29T18:23:20.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -446,7 +449,8 @@
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\CanadaTrails.csproj",
               "RelativeToolTip": "CanadaTrails\\CanadaTrails.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-29T15:50:25.525Z"
+              "WhenOpened": "2024-05-29T15:50:25.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -456,7 +460,6 @@
               "RelativeDocumentMoniker": "CanadaTrails\\Migrations\\CanadaTrailsAuthDb\\20240529163018_Auth DB.cs",
               "ToolTip": "C:\\Users\\bhupinds\\source\\repos\\CanadaTrails\\CanadaTrails\\Migrations\\CanadaTrailsAuthDb\\20240529163018_Auth DB.cs",
               "RelativeToolTip": "CanadaTrails\\Migrations\\CanadaTrailsAuthDb\\20240529163018_Auth DB.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T16:30:18.316Z"
             },
@@ -470,7 +473,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\DTO\\RegisterRequestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T16:39:30.808Z"
+              "WhenOpened": "2024-05-29T16:39:30.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -482,7 +486,8 @@
               "RelativeToolTip": "CanadaTrails\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-23T17:57:55.628Z"
+              "WhenOpened": "2024-05-23T17:57:55.628Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -494,7 +499,8 @@
               "RelativeToolTip": "CanadaTrails\\CustomActionFilter\\ValidateModelAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T16:47:45.829Z"
+              "WhenOpened": "2024-05-28T16:47:45.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -506,7 +512,8 @@
               "RelativeToolTip": "CanadaTrails\\Repository\\WalkRepository.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAswCoAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:04:35.702Z"
+              "WhenOpened": "2024-05-24T16:04:35.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -518,7 +525,8 @@
               "RelativeToolTip": "CanadaTrails\\Repository\\IWalkRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:03:53.256Z"
+              "WhenOpened": "2024-05-24T16:03:53.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -530,7 +538,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\Domain\\Walk.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAxwAcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:00:39.55Z"
+              "WhenOpened": "2024-05-23T18:00:39.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -542,7 +551,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\DTO\\RegionDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:06:28.434Z"
+              "WhenOpened": "2024-05-23T18:06:28.434Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -554,7 +564,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\Domain\\Difficulty.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T17:51:58.656Z"
+              "WhenOpened": "2024-05-23T17:51:58.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -566,7 +577,8 @@
               "RelativeToolTip": "CanadaTrails\\Migrations\\20240524155813_Created Seed Data.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T15:58:13.877Z"
+              "WhenOpened": "2024-05-24T15:58:13.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -578,7 +590,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\DTO\\UpsertRegionDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:06:36.54Z"
+              "WhenOpened": "2024-05-23T18:06:36.54Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -590,7 +603,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\DTO\\UpdateWalkRequestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:42:23.506Z"
+              "WhenOpened": "2024-05-24T19:42:23.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -602,7 +616,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\DTO\\WalkDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:08:05.997Z"
+              "WhenOpened": "2024-05-24T16:08:05.997Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -614,7 +629,8 @@
               "RelativeToolTip": "CanadaTrails\\Models\\DTO\\DifficultyDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:52:23.739Z"
+              "WhenOpened": "2024-05-24T19:52:23.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -626,7 +642,8 @@
               "RelativeToolTip": "CanadaTrails\\Repository\\IRegionRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAtwAkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:08:13.987Z"
+              "WhenOpened": "2024-05-23T18:08:13.987Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -638,7 +655,8 @@
               "RelativeToolTip": "CanadaTrails\\Migrations\\20240523180242_Initial Migration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T18:02:42.454Z"
+              "WhenOpened": "2024-05-23T18:02:42.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

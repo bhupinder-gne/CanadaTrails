@@ -16,22 +16,34 @@ namespace CanadaTrails.Controllers
         private CanadaTrailsDbContext _context;
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
+        private readonly ILogger<RegionsController> logger;
 
-        public RegionsController(CanadaTrailsDbContext context, IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(CanadaTrailsDbContext context, IRegionRepository regionRepository, IMapper mapper, ILogger<RegionsController> logger)
         {
             this._context = context;
             this.regionRepository = regionRepository;
             this.mapper = mapper;
+            this.logger = logger;
         }
 
-        //GET ALL REGIONS
+        //GET ALL REGIONS 
         //GET api/regions
         [HttpGet]
         [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
-            var regions = await regionRepository.GetRegionsAsync();
-            return Ok(mapper.Map<List<RegionDto>>(regions));
+            try
+            {
+                throw new Exception("Test Exception");
+                var regions = await regionRepository.GetRegionsAsync();
+                return Ok(mapper.Map<List<RegionDto>>(regions));
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error getting all regions");
+                return StatusCode(500, "Internal Server Error");
+
+            }
         }
 
         //GET REGION BY ID

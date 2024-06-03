@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CanadaTrails")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b0d8e2eda74b8223169d151158b390cf039731f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a4425d96307039328e52a45c5eaf3fd9ceeea7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CanadaTrails")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CanadaTrails")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

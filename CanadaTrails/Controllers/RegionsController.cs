@@ -32,18 +32,8 @@ namespace CanadaTrails.Controllers
         [Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
-            try
-            {
-                throw new Exception("Test Exception");
-                var regions = await regionRepository.GetRegionsAsync();
-                return Ok(mapper.Map<List<RegionDto>>(regions));
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Error getting all regions");
-                return StatusCode(500, "Internal Server Error");
-
-            }
+            var regions = await regionRepository.GetRegionsAsync();
+            return Ok(mapper.Map<List<RegionDto>>(regions));
         }
 
         //GET REGION BY ID

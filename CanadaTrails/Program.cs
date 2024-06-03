@@ -1,5 +1,6 @@
 using CanadaTrails.API.Data;
 using CanadaTrails.Mappings;
+using CanadaTrails.Middlewares;
 using CanadaTrails.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -105,6 +106,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
